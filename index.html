@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Square Attack</title>
+    </head>
+    <style>
+        body {
+            width: 100%;
+            overflow: hidden;
+            background-color: blueviolet;
+            background-size: cover;
+        }
+        #board {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 40px auto;
+            border: 2px solid white;
+            background-color: black;
+            overflow: hidden;
+        }
+        #jet {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: square;
+            background-color: blue;
+            left: 50%;
+            bottom: 0px;
+        }
+        .bullets {
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            width: 10px;
+            height: 10px;
+            background: square;
+            background-color: gold;
+        }
+        .rocks {
+            position: absolute;
+            top: 0px;
+            width: 50px;
+            height: 50px;
+            background: square;
+            background-color: red;
+        }
+        /* #lives {
+            position: absolute;
+            top: 150px;
+            margin: 40px;
+            font-size: 10em;
+            color: black;
+        } */
+        #points {
+            position: absolute;
+            top: 0px;
+            margin: 40px;
+            opacity: 0.7;
+            font-size: 10em;
+            color:black;
+        }
+    </style>
+    <script src="./main.js" type="module" defer></script>
+    <body>
+        <!-- <script>
+            let imgElement = document.getElementById('imageSrc');
+            imgElement.onload = function() {
+                let mat = cv.imread(imgElement);
+            }
+            cv.imshow("outputCanvas", mat);
+        </script> -->
+        <!-- <script async src="opencv.js" onload="" type="text/javascript"></script> -->
+        <div class="inputoutput">
+            <div id="imageSrc">
+                <div id="board">
+                    <div class="rocks"></div>
+                    <div id="jet"></div>
+                </div>
+                <div id="points">0</div>
+                <!-- <div id="lives">3</div> -->
+            </div>
+        </div>
+        <!-- <canvas id="outputCanvas"></canvas> -->
+    </body>
+</html>
