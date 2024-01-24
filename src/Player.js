@@ -9,6 +9,8 @@ export class Player {
                 jet.style.left = left - 10 + "px";
             } else if (e.key == "ArrowRight" && left <= 460) {
                 jet.style.left = left + 10 + "px";
+            } else if (e.keyCode == 13) {
+                alert("Paused");
             }
 
             if (e.key == "ArrowUp" || e.keyCode == 32) {
